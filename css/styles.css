@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(211, 246, 255); */
+    min-height: 100vh;
+}
+
+#main {
+    min-height: 100vh;
+}
+
+#clockArea {
+    position: relative;
+    background: url("../img/clock.png");
+    height: 40vw;
+    width: 40vw;
+    background-size: 100%;
+    margin: auto;
+    top: 5vh;
+    /* border: 2px solid red; */
+}
+
+#hour,#minute,#second {
+    position: absolute;
+    background-color: black;
+    border-radius: 1.3vw;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 0.8vw;
+    height: 9.5vw;
+    top: 10.7vw;
+    left: 19.5vw;
+    opacity: 0.82;
+    /* background-color: red; */
+    /* display: none; */
+}
+
+#minute {
+    width: 0.6vw;
+    height: 12vw;
+    top: 8.2vw;
+    left: 19.6vw;
+    opacity: 0.82;
+    /* background-color: yellow; */
+    /* display: none; */
+}
+
+#second {
+    width: 0.4vw;
+    height: 14vw;
+    top: 6.2vw;
+    left: 19.7vw;
+    opacity: 0.82;
+    /* background-color: aqua; */
+    /* display: none; */
+}
+
+/* Media Queries  */
+
+/* For Mobile Devices */
+@media only screen and (max-width: 480px) {
+
+    #clockArea {
+        height: 80vw;
+        width: 80vw;
+        top: 18vh;
+    }
+
+    #hour {
+        width: 1.8vw;
+        height: 22vw;
+        top: 18vw;
+        left: 39vw;
+        /* background-color: red; */
+        /* display: none; */
+    }
+
+    #minute {
+        width: 1.35vw;
+        height: 26vw;
+        top: 14.5vw;
+        left: 39.2vw;
+        /* background-color: red; */
+        /* display: none; */
+    }
+    
+    #second {
+        width: 1.1vw;
+        height: 29vw;
+        top: 11.4vw;
+        left: 39.3vw;
+        /* background-color: red; */
+        /* display: none; */
+    }
+
+}
+
+/* For Tablets  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    #clockArea {
+        height: 70vw;
+        width: 70vw;
+        top: 15vh;
+    }
+
+    #hour {
+        width: 1.5vw;
+        height: 19vw;
+        top: 16.2vw;
+        left: 34.2vw;
+        /* background-color: red; */
+        /* display: none; */
+    }
+
+    #minute {
+        width: 1.25vw;
+        height: 23.2vw;
+        top: 12vw;
+        left: 34.35vw;
+        /* background-color: yellow; */
+        /* display: none; */
+    }
+
+    #second {
+        width: 0.8vw;
+        height: 25vw;
+        top: 10vw;
+        left: 34.6vw;
+        /* background-color: aqua; */
+        /* display: none; */
+    }
+
+}
+
+/* For small screen laptops  */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #clockArea {
+        height: 60vw;
+        width: 60vw;
+        top: 8vh;
+    }
+
+    #hour {
+        width: 1.3vw;
+        height: 16vw;
+        top: 14.4vw;
+        left: 29.2vw;
+        /* background-color: red; */
+        /* display: none; */
+    }
+
+    #minute {
+        width: 1vw;
+        height: 19vw;
+        top: 11.3vw;
+        left: 29.4vw;
+        /* background-color: yellow; */
+        /* display: none; */
+    }
+
+    #second {
+        width: 0.7vw;
+        height: 21vw;
+        top: 9.3vw;
+        left: 29.5vw;
+        /* background-color: aqua; */
+        /* display: none; */
+    }
+
+}
