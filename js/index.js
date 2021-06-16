@@ -17,7 +17,10 @@ setInterval(() => {
 
     let bodyBg = document.getElementById("main");
 
-    if(dt.getHours() < 5) {
+    // In Github, we have to use url paths like this => "url('img/image_name.jpg') center/cover no-repeat";
+    // For local development, we have to use url paths like this => "url('../img/image_name.jpg') center/cover no-repeat";
+
+    if((dt.getHours() <= 5) || (dt.getHours() > 18)) {
         bodyBg.style.background = "url('img/bg-3.jpg') center/cover no-repeat";
         bodyBg.style.opacity = 0.9;
     }
@@ -27,14 +30,11 @@ setInterval(() => {
         bodyBg.style.opacity = 0.9;
     }
     
-    else if((dt.getHours() > 12) && (dt.getHours() < 18)) {
+    else if((dt.getHours() >= 12) && (dt.getHours() < 18)) {
         bodyBg.style.background = "url('img/bg-2.jpg') center/cover no-repeat";
         bodyBg.style.opacity = 0.9;
     }
-    
-    else if((dt.getHours() > 18)) {
-        bodyBg.style.background = "url('img/bg-3.jpg') center/cover no-repeat";
-        bodyBg.style.opacity = 0.9;
-    }
+
+    console.log(dt.getHours());
 
 }, 1000);
